@@ -1,6 +1,6 @@
 // Иконка 3 (verbB2-teil3). Офлайн-кэш. При обновлении поменяй номер версии (v1 → v2) — телефон заберёт новые файлы.
 // Имя кэша уникально на домене kirujka.github.io — не брать имена других иконок.
-var CACHE = 'kartei-teil3-v1';
+var CACHE = 'kartei-teil3-v2';
 var FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', function(e){
   e.waitUntil(caches.open(CACHE).then(function(c){ return c.addAll(FILES); }).then(function(){ return self.skipWaiting(); }));
